@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="icon" type="image/x-icon" href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgovyhey7MCwT-trdkHj35wVjlEl4Oh-7n8Cw_WxaoOP4k5H7ESyoRot23fE8IXnoUBq7-19EKd22iptwhjtDU_UfbF9GPEic-cj73FYsbEftdSEZM0YZ4dpkrO-f8TOFwGB5bW9cRlPJv9/s1600/2503507cec7b11e2ab3c22000a1fc513_72.jpg">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="music-player">
+      <h2>Alafasy Nasheed</h2>
+      <nav>
+        <div class="circle">
+          <a href="/index.html"> <i class="fa-solid fa-angle-left"></i></a>
+        </div>
+        <div class="circle" id="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="image-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlxgCTHmbMiHaR0F4FMGe9S4-0ZdaDYVsIOQ&s" alt=""
+          class="song-img">
+        <div id="song-list" class="song-list">
+        </div>
+      </div>
+      <h1 id="song-title">Music</h1>
+      <p id="artist">yasser</p>
+      <audio id="song" src="" type="audio/mp3"></audio>
+      <input type="range" value="50" id="progress">
+      <div class="controls">
+        <div id="backward-btn"> <i class="fa-solid fa-backward"></i></div>
+        <div id="play-pause-btn"> <i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div id="forward-btn"> <i class="fa-solid fa-forward"></i></div>
+      </div>
+      <div class="volume-control">
+        <i class="fa-solid fa-volume-down"></i>
+        <input type="range" id="volume" min="0" max="1" step="0.01" value="0.5">
+        <i class="fa-solid fa-volume-up"></i>
+      </div>
+    </div>
+  </div>
+  <script src="/script.js"></script>
+</body>
+
+</html>

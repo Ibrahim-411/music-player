@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background: url("https://washingtoninst.org/wp-content/uploads/2022/06/Untitled-design-3.png")no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.music-player {
+  background: #e28e9c;
+  width: 400px;
+  padding: 15px 35px;
+  text-align: center;
+  border-radius: 25px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+nav .circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #f53192;
+  background: #fff;
+  line-height: 40px;
+  box-shadow: 0 5px 10px rgba(255, 26, 26, 0.22);
+}
+
+.song-img {
+  width: 300px;
+  border-radius: 20px;
+  border: 8px solid #fff;
+  box-shadow: 0 10px 60px rgba(255, 26, 26, 0.22);
+}
+
+.music-player h1 {
+  font-size: 30px;
+  font-weight: 400;
+  color: #333;
+  margin-top: 20px;
+
+}
+
+.music-player p {
+  font-size: 14px;
+  color: #333;
+}
+
+#progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background-color: #f53192;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 30px 0;
+}
+
+#progress::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  -webkit-appearance: none;
+  background-color: #f53192;
+  border-radius: 50%;
+  border: 8px solid #fff;
+  box-shadow: 0 5px 5px rgba(255, 26, 26, 0.22);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls div {
+  width: 60px;
+  height: 60px;
+  margin: 20px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #f53192;
+  box-shadow: 0 10px 20px rgba(255, 26, 26, 0.22);
+  cursor: pointer;
+}
+
+.controls div:nth-child(2) {
+  transform: scale(1.5);
+  background: #f53192;
+  color: #fff;
+}
+
+.image-container {
+  position: relative;
+}
+
+.song-list {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(19, 18, 18, 0.9);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: white;
+  border-radius: 15px;
+}
+
+.song-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.song-list li {
+  padding: 10px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.song-list li:hover {
+  background-color: rgb(244, 56, 84);
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.controls div {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.volume-control {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.volume-control input[type="range"] {
+  margin: 0 10px;
+  flex: 1;
+}
+
+.volume-control i {
+  font-size: 24px;
+}
+
+@media(max-width:600px) {
+  .music-player {
+    width: 100%;
+  }
+
+  .song-img {
+    width: 300px;
+  }
+
+}
+
+@media(max-width:400px) {
+  .song-img {
+    width: 250px;
+  }
+
+  .controls {
+    width: 115%;
+    position: relative;
+    right: 20px;
+  }
+}
+
+@media(max-width:400px) {
+  .music-player {
+    background: #eddfdf58;
+    border-radius: 0%;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .music-player p {
+    color: white;
+  }
+
+  .music-player h1 {
+    color: white;
+  }
+}
